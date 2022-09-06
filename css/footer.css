@@ -1,0 +1,56 @@
+.social {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f7f6;
+  margin-bottom: 68px;
+}
+
+.social_ul {
+  padding: 31px;
+}
+
+.social_li {
+  display: inline-block;
+}
+
+.social_img {
+  margin-right: 28px;
+}
+
+.image_drib {
+  display:block;
+  width: 21px;
+  height: 21px;
+  background-image: url(../svg/001-dribbble.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 21px;
+}
+
+.image_pin {
+  display:block;
+  width: 21px;
+  height: 21px;
+  background-image: url(../svg/002-pinterest.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 21px;
+}
+
+.image_tum {
+  display:block;
+  width: 21px;
+  height: 21px;
+  background-image: url(../svg/003-tumblr.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 21px;
+}
+
+.copyright {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: #999999;
+  margin-bottom: 40px;
+}
