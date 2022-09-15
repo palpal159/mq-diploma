@@ -130,7 +130,6 @@ body {
 
 .nav {
   display: flex;
-  justify-content: space-between;
 }
 
 .logo_menu {
@@ -154,15 +153,8 @@ body {
   }
 }
 
-.burger-menu {
-  display: flex;
-  justify-content: flex-end;
-}
-
-@media (min-width: 1200px) {
-  .burger_menu {
-    display: none;
-  }
+.burger_menu {
+  margin-left: auto;
 }
 
 .menu-btn {
@@ -247,11 +239,16 @@ body {
 
 @media (min-width: 1200px) {
   .nav {
+    min-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
   }
+
+  .burger_menu {
+    display: none;
+}
 
   .logo_menu {
     display: contents;

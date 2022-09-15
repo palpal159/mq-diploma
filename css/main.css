@@ -85,7 +85,7 @@
     display: flex;
     align-items: flex-end;
     width: 24.8%;
-    height: 400px;
+    height: 265px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -158,9 +158,9 @@
     margin: 0 auto;
     border: 2px solid #b59f5b;
     padding-left: 10px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
     position: relative;
     z-index: 2;
   }
@@ -216,11 +216,19 @@
 
 @media (min-width:1200px) {
   .main_container {
-    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .container_section {
     display: flex;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .desctop {
+    margin-left:  0;
   }
 
   .container_article {
@@ -343,6 +351,23 @@
 }
 
 @media (min-width: 767px) and (max-width: 1199px) {
+  .price_box {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: -40px;
+    margin-bottom: 40px;
+    border: 2px solid #b59f5b;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 65px;
+    z-index: 2;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width:  1200px) {
   .price_box {
     position: relative;
     box-sizing: border-box;
