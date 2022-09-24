@@ -48,9 +48,14 @@
 }
 
 .copyright {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.copyrigth_link {
   font-size: 12px;
   font-weight: bold;
   text-align: center;
   color: #999999;
-  margin-bottom: 40px;
+  text-decoration: none;
 }
