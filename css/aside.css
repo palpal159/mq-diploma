@@ -5,8 +5,14 @@
 }
 
 @media (min-width: 1200px) {
+  .aside_item {
+    font-size: 14px;
+    line-height: 29px;
+  }
+
   .aside_box {
     max-width: 262px;
+    margin-top: 60px;
   }
 }
 
@@ -44,11 +50,35 @@
 }
 
 .input_search {
-  width: 100%;
+  width: 333px;
   height: 48px;
   padding: 10px;
   background: #f4f7f6;
   border: 0;
+}
+
+@media (min-width: 767px) and (max-width: 1199px) {
+  .input_search {
+    width: 213px;
+    height: 48px;
+    padding: 10px;
+    background: #f4f7f6;
+    border: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .input_search {
+    width: 213px;
+    height: 48px;
+    padding: 10px;
+    background: #f4f7f6;
+    border: 0;
+  }
+}
+
+.input_search:focus {
+  outline: none;
 }
 
 .subscribe_form {
@@ -68,8 +98,7 @@
 
 
 .input_subscribe {
-
-  width: 92.5%;
+  width: 94.5%;
   height: 28px;
   background: #f4f7f6;
   border: 0;
@@ -77,11 +106,41 @@
   margin-bottom: 18px;
 }
 
+@media (min-width: 767px) and (max-width: 1199px) {
+  .input_subscribe {
+    width: 92.5%;
+    height: 28px;
+    background: #f4f7f6;
+    border: 0;
+    padding: 10px;
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .input_subscribe {
+    width: 92.5%;
+    height: 28px;
+    background: #f4f7f6;
+    border: 0;
+    padding: 10px;
+    margin-bottom: 18px;
+  }
+}
+
+.input_subscribe:focus {
+  outline: none;
+}
+
 .subscribe-label {
   font-family: 'Open Sans';
   font-size: 13px;
   padding-left: 10px;
   color: f4f7f6;
+}
+
+.subscribe-label:focus {
+  display: none;
 }
 
 .visually-hidden {

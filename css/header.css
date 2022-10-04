@@ -64,17 +64,6 @@ body {
   position: relative;
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .header {
-    display: flex;
-    justify-content: center;
-    background-image: url(../img/banner-bg-tablet.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-}
-
 @media (min-width: 1200px) {
   .header {
     display: flex;
@@ -83,6 +72,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+  }
+  .header::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
   }
 }
 
@@ -97,6 +98,53 @@ body {
   right: 0;
   bottom: 0;
   z-index: 1;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/banner-bg-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .header::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../img/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .header::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
 }
 
 .container {
@@ -238,17 +286,26 @@ body {
 }
 
 @media (min-width: 1200px) {
+  .header_item {
+    font-size: 45px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 75px;
+    color: #ffff;
+    padding-bottom: 150px;
+  }
+
   .nav {
     min-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
   }
 
   .burger_menu {
     display: none;
-}
+  }
 
   .logo_menu {
     display: contents;
@@ -292,18 +349,8 @@ body {
   }
 
   .header_info {
-    width: 650px;
+    width: 687px;
     padding-top: 80px;
     margin: auto;
-  }
-
-  .header_item {
-    font-size: 40px;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 55px;
-    color: #ffff;
-    padding-bottom: 150px;
   }
 }
